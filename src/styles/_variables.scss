@@ -6,4 +6,5 @@ $day-padding: 10px;
 $day-gap: 1px;
 $border-width: 1px;
 $days-name: mon, tue, wed, thu, fri, sat, sun;
-$day-margin: $day-size + ($border-width * 3);
+$month-length: 28, 29, 30, 31;
+$day-margin: $day-size + $day-gap;

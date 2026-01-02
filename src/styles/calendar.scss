@@ -4,7 +4,8 @@
   display: flex;
   flex-wrap: wrap;
   gap: $day-gap;
-  width: (($day-size + $border-width) * 7) + ($day-gap * 6) + ($day-padding * 2);
+  width: ($day-size * 7) + ($day-gap * 6) + ($day-padding * 2);
+  margin: 0 auto;
   box-sizing: border-box;
 
   &__day {
@@ -17,6 +18,7 @@
     background-color: $grey;
     transition: all 0.5s linear;
     cursor: pointer;
+    box-sizing: border-box;
 
     @for $i from 1 through 31 {
       &:nth-child(#{$i}) {
@@ -44,7 +46,7 @@
     }
   }
 
-  @for $length from 28 through 30 {
+  @each $length in $month-length {
     &--month-length-#{$length} {
       .calendar__day:nth-child(n + #{$length + 1}) {
         display: none;

@@ -1,6 +1,11 @@
 @import './variables';
 @import './calendar';
 
-body {
+.page {
   margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
 }
