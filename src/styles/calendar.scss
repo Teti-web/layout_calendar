@@ -7,6 +7,7 @@
   width: ($day-size * 7) + ($day-gap * 6) + ($day-padding * 2);
   margin: 0 auto;
   box-sizing: border-box;
+  padding: $day-padding;
 
   &__day {
     display: flex;
